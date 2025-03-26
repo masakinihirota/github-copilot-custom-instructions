@@ -1,0 +1,11 @@
+{
+	"chat.promptFiles": true,
+	"chat.renderRelatedFiles": true,
+	"chat.agent.maxRequests": 20,
+	"chat.mcp.discovery.enabled": true,
+	"github.copilot.chat.codesearch.enabled": true,
+	"github.copilot.chat.edits.temporalContext.enabled": true,
+	"github.copilot.chat.newWorkspaceCreation.enabled": true,
+	"github.copilot.chat.search.semanticTextResults": true,
+	"github.copilot.chat.codeGeneration.useInstructionFiles": true
+}
