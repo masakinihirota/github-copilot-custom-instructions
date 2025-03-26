@@ -1,2 +1,4 @@
-# github-copilot-custom-instructions
-GitHub Copilot 指示書
+
+## AIによる指示書の作成方法
+
+
