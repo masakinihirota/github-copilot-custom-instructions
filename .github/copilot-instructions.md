@@ -1,13 +1,3 @@
-
-```terminal
-npm run dev
-pnpm run storybook
-supabase start
-
-```
-
-# todo
-
 * 基本ルールを設定する
 
 VSCode ルール
@@ -48,31 +38,6 @@ GitHub Copilot プロンプト用ルール
 git コミット
 
 タスクリストを終えるまで以上を繰り返します。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
