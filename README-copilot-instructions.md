@@ -439,10 +439,26 @@ GitHub Copilot Agent modeで利用します。
 これをプロンプトファイルに登録して。
 GitHub Copilotと会話をしてプロンプトファイルに実装する詳細な情報を登録します。
 
+---
 
+# .gitignoreファイルの設定
 
+※設計書や指示書をコードのリポジトリに含めたくない場合に追加します。
+
+```.gitignore
+# 設計書
+/_design
+
+# 指示書
+/.github
+/_memory-bank
+/_task-list
 
 ```
+
+
+
+---
 
 # 参考
 
