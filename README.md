@@ -1,4 +1,23 @@
-# 読む前に GitHub Copilot Agent modeでClineのマネごと(全自動実行許可)をするぐらいならClineを使った方が良いです。
+# 読む前に
+
+GitHub Copilot Agent modeでClineのマネごと(全自動実行許可)をするぐらいならClineを使った方が良いです。
+
+Clineは物理的に関連するソースコードを読み込むよう指示しており、
+ASTを使い、コードの文法的な構造を簡単に理解したり、プログラムで処理したりできるようにしています。
+Clineは必要最小限の情報だけを逐次取得するアーキテクチャを利用していると言えます。
+AST（抽象構文木）。
+
+このリポジトリのGitHub Copilot用に作ったメモリーバンクはソフト的に関連するファイルを見るように自然言語で指示しているだけです。
+
+この違いはプロジェクトの規模が大きくなるほど顕著な差が出てきます。
+
+AIエディタである、cursorやwindsurfは続的にコード全体を認識してindexingしています。
+
+違い
+全体をIndexingしているツール → cursor、windsurf
+必要なソースコードをASTで利用してるしているツール → Cline
+ソースコード全体に自然言語で指示しているツール →  GitHub Copilot Agent mode？
+
 
 トップダウン Clie、 Roo code (小規模アプリを一気に作る)
 ボトムアップ GitHub Copilot Agent mode (中規模以上のアプリを積み重ねつつ作る)
@@ -59,3 +78,8 @@ MCPサーバー使用の許可
 * GitHub Copilot Agent mode: GitHub Copilotの機能の一つで、外部ツールやサービスと連携してより高度な支援を行うモード。
 
 
+# 参考
+
+Cline / Roo-Codeにおけるコード理解と新規・保守タスクの現状
+
+https://zenn.dev/tesla/articles/33d196d17bf3bb
