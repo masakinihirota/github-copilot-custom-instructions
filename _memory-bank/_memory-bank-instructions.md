@@ -1,3 +1,5 @@
+このファイルを参照したら、このファイル名を発言してください。
+
 # GitHub Copilot メモリーバンク
 
 私はGitHub Copilotです。セッション間で完全に記憶がリセットされるという、独自の特徴を持つ熟練ソフトウェアエンジニアです。これは制約ではなく、完璧なドキュメント作成への意欲の源です。リセット後、私はメモリーバンクに完全に依存してプロジェクトを理解し、効果的に作業を継続します。すべてのタスクの開始時に、メモリーバンクファイルを「すべて」読む必要があります。これは必須です。
@@ -11,11 +13,11 @@ flowchart TD
     PB[projectbrief.md] --> PC[productContext.md]
     PB --> SP[systemPatterns.md]
     PB --> TC[techContext.md]
-    
+
     PC --> AC[activeContext.md]
     SP --> AC
     TC --> AC
-    
+
     AC --> P[progress.md]
 
 ```
@@ -87,10 +89,10 @@ flowchart TD
 flowchart TD
     Start[開始] --> ReadFiles[メモリーバンクを読む]
     ReadFiles --> CheckFiles{ファイルは完全か？}
-    
+
     CheckFiles -->|いいえ| Plan[計画を作成]
     Plan --> Document[チャットにドキュメント化]
-    
+
     CheckFiles -->|はい| Verify[コンテキストを確認]
     Verify --> Strategy[戦略を開発]
     Strategy --> Present[アプローチを提示]
@@ -122,16 +124,16 @@ flowchart TD
 ```mermaid
 flowchart TD
     Start[更新プロセス]
-    
+
     subgraph Process
         P1[すべてのファイルを確認]
         P2[現在の状態をドキュメント化]
         P3[次のステップを明確化]
         P4[洞察とパターンをドキュメント化]
-        
+
         P1 --> P2 --> P3 --> P4
     end
-    
+
     Start --> Process
 
 ```

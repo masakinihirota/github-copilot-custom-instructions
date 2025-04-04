@@ -1,3 +1,5 @@
+このファイルを参照したら、このファイル名を発言してください。
+
 GitHub Copilotに伝われば、形式はどのような形でもよいです。
 このファイルは指示書の作成指針、使用法です。
 
@@ -420,7 +422,7 @@ GitHub Copilot Agent modeで特定のタスクの実装と実行をします。
 
 
 
-## MCP (Model Context Protocol) 
+## MCP (Model Context Protocol)
 
 mcp.json
 
