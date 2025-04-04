@@ -107,3 +107,28 @@ AIが読み込む情報に対して
 
 * Cline / Roo-Codeにおけるコード理解と新規・保守タスクの現状: [https://zenn.dev/tesla/articles/33d196d17bf3bb](https://zenn.dev/tesla/articles/33d196d17bf3bb)
 
+
+
+
+
+
+
+# Cursor rules
+
+Always
+常に適用されるルール
+
+Auto Attached
+拡張子にマッチしたファイルに適用されるルール
+*.tsx
+
+Agent Requested
+AIが必要だと判断した時、採用するルール
+
+Manual
+手動
+
+
+
+
+
