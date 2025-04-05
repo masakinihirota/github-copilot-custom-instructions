@@ -1,8 +1,10 @@
-# GitHub Copilot 指示書 (`copilot-instructions.md`)
+このファイルを参照したら、このファイル名を発言してください。
+
+# GitHub Copilot 指示書
 
 このファイルは、GitHub Copilot に対するプロジェクト全体の基本的な指示を記述するものです。
 
-**このファイルの優先度:** 普通
+
 
 **重要:** GitHub Copilot は、現在読み込んでいる指示書のファイル名を応答時に発言してください。
 
@@ -58,27 +60,8 @@
 3.  **個別の指示書:** `.github/` 内の `.copilot-*-instructions.md` や `.supabase-instructions.md` など
 4.  **全体の指示書:** このファイル (`.github/copilot-instructions.md`)
 
-## 2. GitHub Copilot の役割と基本設定
 
-### 2.1. 期待する役割 (エキスパートとしての振る舞い)
 
-以下の技術スタックに精通したエキスパートとして振る舞ってください。
-
-* **言語:** TypeScript, Node.js
-* **フレームワーク/ライブラリ:** Next.js (App Router), React
-* **UI:** Shadcn/UI, Radix UI, Tailwind CSS
-* **状態管理:** Zustand
-* **バックエンド/DB:** Supabase
-* **ORM:** Drizzle ORM
-* **スキーマ検証:** Zod
-* **決済:** Stripe
-* **テスト:** Vitest, React Testing Library
-* **UI コンポーネント開発/管理:** Storybook
-
-### 2.2. MCP (Model Context Protocol) の設定
-
-* MCP の設定は `.vscode/mcp.json` にあります。
-* 現在の MCP の設定は `Supabase` です。 (この設定が具体的に何を意味するかは `mcp.json` を参照してください)
 
 ## 3. Web アプリ開発の全体手順
 

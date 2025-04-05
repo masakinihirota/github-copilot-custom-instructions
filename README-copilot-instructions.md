@@ -1,7 +1,29 @@
-このファイルを参照したら、このファイル名を発言してください。
-
 GitHub Copilotに伝われば、形式はどのような形でもよいです。
 このファイルは指示書の作成指針、使用法です。
+
+# 重要ファイル
+
+* README.md
+
+このリポジトリの使い方
+
+* README-copilot-instructions.md
+
+指示書の書き方
+
+* .github\copilot-instructions.md
+
+GitHub Copilotの全体の指示書
+通常は、指示書のの指定をしないと、このファイルが自動で読み込まれます。
+
+* .github\prompts\20250401-000-template.prompt.md
+
+プロンプトファイル(＝実装書)のテンプレートファイルです。
+
+GitHub Copilotと会話してプロンプトファイルの詳細を詰めていきます。
+
+このプロンプトファイルに、複数の指示書を登録して１ファイルにまとめます。
+
 
 # Webアプリ開発でのGitHub Copilotの設計書、指示書、MCP
 
@@ -428,6 +450,69 @@ mcp.json
 
 MCPの設定ファイルです。
 GitHub Copilot Agent modeで利用します。
+
+
+---
+
+# 指示書の読み込み指定
+
+プロンプトファイルに
+読み込む指示書を指定します。
+
+
+
+## 指示書を複数指定する方法
+
+プロンプトファイルの先頭に書いておきます。
+
+プロンプトファイルのテンプレート
+
+20250401-000-template.prompt.md
+
+
+
+
+
+```
+## 指示書と優先順位
+
+以下の指示書を参照し、優先順位に従って作業を進めてください。
+
+### 指示書一覧
+1. **全体のルール:** `.github/copilot-instructions.md`
+2. **コード生成に関するルール:** `.github/.copilot-codeGeneration-instructions.md`
+3. **テストに関するルール:** `.github/.copilot-test-instructions.md`
+
+### 優先順位
+指示内容が競合する場合、以下の優先順位に従ってください：
+1. `.github/.copilot-codeGeneration-instructions.md`（コード生成に関するルール）
+2. `.github/.copilot-test-instructions.md`（テストに関するルール）
+3. `.github/copilot-instructions.md`（全体のルール）
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+>ルールを確認します。
+どの指示書のファイルを読んでいるのか？そして、読み込んでいるルールを読み上げて下さい。
+
+```
+
 
 
 
