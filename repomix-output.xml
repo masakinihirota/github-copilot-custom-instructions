@@ -86,11 +86,11 @@ flowchart TD
     PB[projectbrief.md] --> PC[productContext.md]
     PB --> SP[systemPatterns.md]
     PB --> TC[techContext.md]
-    
+
     PC --> AC[activeContext.md]
     SP --> AC
     TC --> AC
-    
+
     AC --> P[progress.md]
 
 ```
@@ -162,10 +162,10 @@ flowchart TD
 flowchart TD
     Start[開始] --> ReadFiles[メモリーバンクを読む]
     ReadFiles --> CheckFiles{ファイルは完全か？}
-    
+
     CheckFiles -->|いいえ| Plan[計画を作成]
     Plan --> Document[チャットにドキュメント化]
-    
+
     CheckFiles -->|はい| Verify[コンテキストを確認]
     Verify --> Strategy[戦略を開発]
     Strategy --> Present[アプローチを提示]
@@ -197,16 +197,16 @@ flowchart TD
 ```mermaid
 flowchart TD
     Start[更新プロセス]
-    
+
     subgraph Process
         P1[すべてのファイルを確認]
         P2[現在の状態をドキュメント化]
         P3[次のステップを明確化]
         P4[洞察とパターンをドキュメント化]
-        
+
         P1 --> P2 --> P3 --> P4
     end
-    
+
     Start --> Process
 
 ```
@@ -955,7 +955,7 @@ GitHub Copilot Agent modeで特定のタスクの実装と実行をします。
 
 
 
-## MCP (Model Context Protocol) 
+## MCP (Model Context Protocol)
 
 mcp.json
 
